@@ -155,14 +155,14 @@
 
 @media (max-width: 500px) {
   .codeSnippet {
-      font-size:10px;
+      font-size:8px;
       max-width:300px;
       overflow-x: scroll;
       
   }
 
   .eventDetails {
-      font-size: 12px;
+      font-size: 10px;
   }
 } 
 
