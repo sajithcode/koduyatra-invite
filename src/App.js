@@ -3,6 +3,7 @@ import './App.css';
 import Img2 from './Assets/img2.png';
 import Particle from './components/Particle';
 import Invite from './components/Invite';
+import Logo from './Assets/logo.png'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
     <Particle />
     
       <div  className='logo'>
-      <img src={Img2} width={200}/>
+      <img src={Logo} width={200}/>
       </div>
       
 
