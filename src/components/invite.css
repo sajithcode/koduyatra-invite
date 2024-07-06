@@ -1,0 +1,169 @@
+
+/* 
+
+.codeSnippet{
+    font-family: "Space Mono", monospace;
+    white-space: pre-wrap;
+    font-size:16px;
+    color:white;
+    padding: 10px 100px;
+    display:flex;
+    justify-content:center;
+}
+
+.codeSnippet {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+}
+
+.eventDetails {
+    color: yellow;
+    font-size:18px;
+} */
+
+/* Basic Reset */
+/* Default styles for larger screens */
+/* .codeSnippet {
+    font-family: "Space Mono", monospace;
+    white-space: pre-wrap;
+    font-size: 16px;
+    color: white;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.eventDetails {
+    color: yellow;
+    font-size: 18px;
+}
+
+/* Mobile styles */
+/* @media (max-width: 600px) {
+    .codeSnippet {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .eventDetails {
+        font-size: 14px;
+    }
+} */
+
+/* Tablet styles */
+/* @media (min-width: 601px) and (max-width: 1024px) {
+    .codeSnippet {
+        padding: 10px 50px;
+        font-size: 15px;
+    }
+
+    .eventDetails {
+        font-size: 17px;
+    }
+} */ */
+
+
+
+.invite-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure content fills viewport height */
+    width: 100%; /* Stretch to full width */
+    background-color: #f5f5f5; /* Optional background color */
+    margin: 0 20px;
+  }
+
+  
+  
+  .codeSnippet {
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    color:white; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor:pointer;
+    overflow-wrap: break-word; /* Prevent text from overflowing horizontally */
+    white-space: pre-wrap; /* Preserve whitespace while allowing wrapping */
+    max-width: 800px; /* Limit maximum width on larger screens */
+    margin: 0 auto; /* Center the code snippet horizontally */
+
+    outline-width: 1px;
+  outline-offset: 0;
+  outline-color: rgba(0, 130, 206, 0.75);
+  outline-style: solid;
+  animation: animateOutline 4s ease infinite;
+  }
+  
+  .eventDetails {
+    font-weight: bold;
+    color: yellow; /* Adjust color for event details */
+  }
+  .eventDetails span:hover ~ .cursor{
+    transform: scale(5);
+  }
+  .cursor{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    position:fixed;
+    border-radius: 50%;
+    pointer-events:none;
+    mix-blend-mode: difference;
+  }
+
+  @keyframes animateOutline {
+    0% {
+      outline-width: 1px;
+      outline-offset: 0;
+      outline-color: rgba(0, 130, 206, 0);
+    }
+  
+    10% {
+      outline-color: rgba(0, 130, 206, 0.75);
+    }
+  
+    /* The animation finishes at 50% */
+    50% {
+      outline-width: 7px;
+      outline-offset: 4px;
+      outline-color: rgba(0, 130, 206, 0);
+    }
+  
+    100% {
+      outline-width: 7px;
+      outline-offset: 4px;
+      outline-color: rgba(102, 102, 102, 0);
+    }
+  }
+  
+  
+  @media (max-width: 400px) {
+    .codeSnippet {
+        font-size:8px;
+        max-width:250px;
+        overflow-x: scroll;
+        
+    }
+
+    .eventDetails {
+        font-size: 10px;
+    }
+} 
+
+@media (max-width: 500px) {
+  .codeSnippet {
+      font-size:8px;
+      max-width:3000px;
+      overflow-x: scroll;
+      
+  }
+
+  .eventDetails {
+      font-size: 10px;
+  }
+} 
+
+
