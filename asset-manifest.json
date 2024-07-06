@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/koduyatra-invite/static/css/main.4f17feb0.css",
+    "main.js": "/koduyatra-invite/static/js/main.f287ce9e.js",
+    "static/js/453.c95baf60.chunk.js": "/koduyatra-invite/static/js/453.c95baf60.chunk.js",
+    "static/media/img2.png": "/koduyatra-invite/static/media/img2.2cd5959a251605180cca.png",
+    "static/media/logo.svg": "/koduyatra-invite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/koduyatra-invite/index.html",
+    "main.4f17feb0.css.map": "/koduyatra-invite/static/css/main.4f17feb0.css.map",
+    "main.f287ce9e.js.map": "/koduyatra-invite/static/js/main.f287ce9e.js.map",
+    "453.c95baf60.chunk.js.map": "/koduyatra-invite/static/js/453.c95baf60.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f17feb0.css",
+    "static/js/main.f287ce9e.js"
+  ]
+}
