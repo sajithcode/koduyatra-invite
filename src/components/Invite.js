@@ -21,7 +21,7 @@ function Have_FOC_Event() {
         Time: From 6pm onwards
 
         Venue: J.W. Dayananda Somasundara 
-        Auditorium
+               Auditorium
 
         We invite you to mark your calendars and 
         join us for an unforgettable evening.
