@@ -7,17 +7,17 @@ import Invite from './components/Invite';
 function App() {
   return (
     <>
-    
+    <Particle />
     <div className="App">
       <div  className='logo'>
       <img src={Img2} width={200}/>
       </div>
       
 
-      <h1>hello</h1>
-    </div>
-    <Particle />
+      
     <Invite />
+    </div>
+    
 </>
   );
 }
