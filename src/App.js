@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Particle />
-    <div className="App">
+    
       <div  className='logo'>
       <img src={Img2} width={200}/>
       </div>
@@ -16,7 +16,7 @@ function App() {
 
       
     <Invite />
-    </div>
+  
     
 </>
   );
