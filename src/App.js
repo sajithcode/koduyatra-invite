@@ -11,7 +11,9 @@ function App() {
     <Particle />
     
       <div  className='logo'>
+        
       <img src={Logo} width={200}/>
+
       </div>
       
 
