@@ -70,7 +70,7 @@
     align-items: center;
     min-height: 50vh; /* Ensure content fills viewport height */
     width: 100%; /* Stretch to full width */
-    background-color: #000; /* Optional background color */
+    /* background-color: #000; Optional background color */
     
   }
 
@@ -89,12 +89,15 @@
     white-space: pre-wrap; /* Preserve whitespace while allowing wrapping */
     max-width: 800px; /* Limit maximum width on larger screens */
     margin: 0 auto; /* Center the code snippet horizontally */
+    background-color:rgba(0,0,0,0.7);
 
     outline-width: 1px;
   outline-offset: 0;
   outline-color: rgba(0, 130, 206, 0.75);
   outline-style: solid;
   animation: animateOutline 4s ease infinite;
+  /* filter: drop-shadow(3px 3px 1px white); */
+
   }
   
   .eventDetails {

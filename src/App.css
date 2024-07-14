@@ -7,15 +7,26 @@
 body{
   background-color:#000;
 }
+.logo-div{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  /* box-shadow: 8px 8px 150px rgba(0, 0, 0, 0.5);  */
 
-.logo{
-  text-align:center;
-  margin-top:40px;
-  margin-bottom:0px;
+  
  
   
   
 }
+
+
+
+/* .logo-back{
+  background-image: url("./Assets/bg-hero.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+} */
+
 @keyframes swing {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(-1deg); }
@@ -24,8 +35,51 @@ body{
   100% { transform: rotate(0deg); }
 }
 
-.logo img {
+.logo-div img {
   animation: swing 2s ease-in-out infinite;
+  /* box-shadow: 8px 8px 150px rgba(0, 0, 0, 0.5);  */
+
+
+}
+
+.gif-img{
+  display:flex;
+  justify-content:center; 
+}
+
+.gif-img img{
+  width: 200px;
+
+ 
+}
+
+/* .footer {
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 20px;
+  background-color: #000;
+  color:#fff;
+  padding: 20px;
+  text-align: center;
+  position: realtive;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 5px solid #ff6347;
+  border-radius: 10px 10px 0 0; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
+} */
+
+.footer p {
+  margin: 0;
+}
+
+.bg-img{
+  padding-bottom:20px;
+  background-image: url("./Assets/bg-img.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height:140vh;
 }
 
 
@@ -34,4 +88,17 @@ body{
     margin-top:20px;
     margin-bottom:0;
   }
+  .logo-div img{
+    width:150px;
+  }
+
+  .gif-img img{
+    width: 150px;
+   
+  }
+
+  .bg-img{
+    height:100vh;
+  }
 } 
+
