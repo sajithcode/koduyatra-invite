@@ -146,7 +146,7 @@
   @media (max-width: 400px) {
     .codeSnippet {
         font-size:8px;
-        max-width:250px;
+        max-width:350px;
         overflow-x: scroll;
         
     }
@@ -158,14 +158,14 @@
 
 @media (max-width: 500px) {
   .codeSnippet {
-      font-size:8px;
-      max-width:300px;
+      font-size:10px;
+      max-width:400px;
       overflow-x: scroll;
       
   }
 
   .eventDetails {
-      font-size: 10px;
+      font-size: 12px;
   }
 } 
 
