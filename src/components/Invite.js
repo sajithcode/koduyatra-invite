@@ -12,19 +12,19 @@ function Have_FOC_Event() {
 
     const eventDetails = `
 
-            Welcome to Koduyatra
+       Welcome to Koduyatra
 
-          Organized By: 21/22 Batch FOC
+        Organized By: 21/22 Batch FOC
         
-           on Thursday, July 4, 2024
+       Date: Thursday, July 4, 2024
         
-              from 6 PM onwards
+       Time: from 6 PM onwards
 
-          at J.W. Dayananda Somasundara 
-                 Auditorium
+       Venue:  J.W. Dayananda Somasundara 
+                Auditorium
 
         We invite you to mark your calendars and 
-          join us for an unforgettable evening.
+       join us for an unforgettable evening.
     `;
 
     const codeAfterEvent = `\`);
@@ -63,7 +63,7 @@ Have_FOC_Event();
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('on Thursday, July 4, 2024') || line.includes(' from 6 PM onwards') || line.includes('at J.W. Dayananda Somasundara') || line.includes('Auditorium')) {
+                            } else if (line.includes('Date: ') || line.includes(' from 6 PM onwards') || line.includes('J.W. Dayananda Somasundara') || line.includes('Auditorium')) {
                                 return (
                                     <span key={idx} className="eventDate">
                                         {line}
