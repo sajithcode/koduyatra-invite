@@ -12,19 +12,19 @@ function Have_FOC_Event() {
 
     const eventDetails = `
 
-          Welcome to Koduyatra
+            Welcome to Koduyatra
 
-        Organized By: 21/22 Batch FOC
+          Organized By: 21/22 Batch FOC
         
-         on Thursday, July 4, 2024
+           on Thursday, July 4, 2024
         
-            from 6 PM onwards
+              from 6 PM onwards
 
-        at J.W. Dayananda Somasundara 
+          at J.W. Dayananda Somasundara 
                  Auditorium
 
         We invite you to mark your calendars and 
-        join us for an unforgettable evening.
+          join us for an unforgettable evening.
     `;
 
     const codeAfterEvent = `\`);
