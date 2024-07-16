@@ -29,10 +29,9 @@
 }
 
 .eventDetails {
-  /* color: #d4d4d4; */
+  padding-left: 35px;
   font-weight: bold;
-  /* color: #dcdcaa;  */
-  color: #00AE6B;
+  color: #d58747;
 }
 
 .koduyatra {
@@ -43,9 +42,40 @@
 
 .eventDate {
   font-size: 18px;
-  
-  font-weight:500;
+  font-weight: 500;
   color: #dcdcaa; 
+}
+
+.dateLabel {
+  color: #4dbdae;
+}
+
+.dateValue {
+  color: #d58747;
+}
+
+.organizerLabel {
+  color: #4dbdae;
+}
+
+.organizerValue {
+  color: #d58747;
+}
+
+.timeLabel {
+  color: #4dbdae;
+}
+
+.timeValue {
+  color: #d58747;
+}
+
+.venueLabel {
+  color: #4dbdae;
+}
+
+.venueValue {
+  color: #d58747;
 }
 
 @keyframes animateOutline {
@@ -84,6 +114,30 @@
   .eventDate {
       font-size: 12px;
   }
+  .dateLabel {
+      font-size: 10px;
+  }
+  .dateValue {
+      font-size: 10px;
+  }
+  .organizerLabel {
+      font-size: 10px;
+  }
+  .organizerValue {
+      font-size: 10px;
+  }
+  .timeLabel {
+      font-size: 10px;
+  }
+  .timeValue {
+      font-size: 10px;
+  }
+  .venueLabel {
+      font-size: 10px;
+  }
+  .venueValue {
+      font-size: 10px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -99,6 +153,30 @@
       font-size: 14px;
   }
   .eventDate {
+      font-size: 12px;
+  }
+  .dateLabel {
+      font-size: 12px;
+  }
+  .dateValue {
+      font-size: 12px;
+  }
+  .organizerLabel {
+      font-size: 12px;
+  }
+  .organizerValue {
+      font-size: 12px;
+  }
+  .timeLabel {
+      font-size: 12px;
+  }
+  .timeValue {
+      font-size: 12px;
+  }
+  .venueLabel {
+      font-size: 12px;
+  }
+  .venueValue {
       font-size: 12px;
   }
 }

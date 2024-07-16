@@ -11,20 +11,18 @@ function Have_FOC_Event() {
     console.log(\``;
 
     const eventDetails = `
+Welcome to Koduyatra
 
-       Welcome to Koduyatra
+Organized By: 21/22 Batch FOC
 
-        Organized By: 21/22 Batch FOC
-        
-       Date: Thursday, July 4, 2024
-        
-       Time: from 6 PM onwards
+    Date: Thursday, July 4, 2024
 
-       Venue:  J.W. Dayananda Somasundara 
-                Auditorium
+Time: from 6 PM onwards
 
-        We invite you to mark your calendars and 
-       join us for an unforgettable evening.
+Venue: J.W. Dayananda Somasundara Auditorium
+
+We invite you to mark your calendars and
+join us for an unforgettable evening.
     `;
 
     const codeAfterEvent = `\`);
@@ -63,14 +61,43 @@ Have_FOC_Event();
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Date: ') || line.includes(' from 6 PM onwards') || line.includes('J.W. Dayananda Somasundara') || line.includes('Auditorium')) {
+                            } else if (line.includes('Date: Thursday, July 4, 2024')) {
                                 return (
-                                    <span key={idx} className="eventDate">
-                                        {line}
+                                    <span key={idx} className="eventDetails">
+                                        <span className="dateLabel">Date:</span>
+                                        <span className="dateValue"> Thursday, July 4, 2024</span>
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Welcome to Koduyatra') || line.includes('Venue:') || line.includes('Date:') || line.includes('Time:') || line.includes('Organized By:') || line.includes('We invite you') || line.includes('Auditorium') || line.includes('join')) {
+                            } else if (line.includes('Organized By: 21/22 Batch FOC')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        <span className="organizerLabel">Organized By:</span>
+                                        <span className="organizerValue"> 21/22 Batch FOC</span>
+                                        <br />
+                                    </span>
+                                );
+                                
+                            }
+                            else if (line.includes('Time: from 6 PM onwards')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        <span className="timeLabel">Time:</span>
+                                        <span className="timeValue"> from 6 PM onwards</span>
+                                        <br />
+                                    </span>
+                                );
+                            }
+                            
+                            else if (line.includes('Venue: J.W. Dayananda Somasundara')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        <span className="venueLabel">Venue:</span>
+                                        <span className="venueValue"> J.W. Dayananda Somasundara Auditorium</span>
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('Welcome to Koduyatra') || line.includes('We invite you') || line.includes('join')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         {line}
