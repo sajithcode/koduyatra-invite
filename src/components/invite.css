@@ -1,220 +1,99 @@
-
-/* 
-
-.codeSnippet{
-    font-family: "Space Mono", monospace;
-    white-space: pre-wrap;
-    font-size:16px;
-    color:white;
-    padding: 10px 100px;
-    display:flex;
-    justify-content:center;
+.invite-container {
+  font-family: "Fira Sans", sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Ensure content fills viewport height */
+  width: 100%; /* Stretch to full width */
+  /* Optional background color */
 }
 
 .codeSnippet {
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre-wrap;
-}
-
-.eventDetails {
-    color: yellow;
-    font-size:18px;
-} */
-
-/* Basic Reset */
-/* Default styles for larger screens */
-/* .codeSnippet {
-    font-family: "Space Mono", monospace;
-    white-space: pre-wrap;
-    font-size: 16px;
-    color: white;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.eventDetails {
-    color: yellow;
-    font-size: 18px;
-}
-
-/* Mobile styles */
-/* @media (max-width: 600px) {
-    .codeSnippet {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .eventDetails {
-        font-size: 14px;
-    }
-} */
-
-/* Tablet styles */
-/* @media (min-width: 601px) and (max-width: 1024px) {
-    .codeSnippet {
-        padding: 10px 50px;
-        font-size: 15px;
-    }
-
-    .eventDetails {
-        font-size: 17px;
-    }
-} */ 
-
-
-
-.invite-container {
-   font-family: "Fira Sans", sans-serif; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh; /* Ensure content fills viewport height */
-    width: 100%; /* Stretch to full width */
-    /* background-color: #000; Optional background color */
-    
-  }
-
-  
-  
-  .codeSnippet {
-    font-size: 16px;
-    /* font-family: "Fira Sans", sans-serif; */
-    /* font-family: "Space Mono", monospace; */
-    color:white; /* Adjust font size as needed */
-    line-height: 1.5; /* Adjust line height for better readability */
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    cursor:pointer;
-    overflow-wrap: break-word; /* Prevent text from overflowing horizontally */
-    white-space: pre-wrap; /* Preserve whitespace while allowing wrapping */
-    max-width: 800px; /* Limit maximum width on larger screens */
-    margin: 0 auto; /* Center the code snippet horizontally */
-    background-color:rgba(0,0,0,0.7);
-
-    outline-width: 1px;
+  font-size: 16px;
+  color: #d4d4d4; /* Default text color (VS Code default) */
+  line-height: 1.5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1e1e1e; /* Background color similar to VS Code */
+  outline-width: 1px;
   outline-offset: 0;
   outline-color: rgba(0, 130, 206, 0.75);
   outline-style: solid;
   animation: animateOutline 4s ease infinite;
-  /* filter: drop-shadow(3px 3px 1px white); */
-  /* backdrop-filter: blur(10px) */
-
-  }
-  
-  .eventDetails {
-    font-weight: bold;
-    color: yellow; /* Adjust color for event details */
-  }
-  .eventDetails span:hover ~ .cursor{
-    transform: scale(5);
-  }
-  .cursor{
-    width:20px;
-    height: 20px;
-    background-color: #fff;
-    position:fixed;
-    border-radius: 50%;
-    pointer-events:none;
-    mix-blend-mode: difference;
-  }
-
-  .highlighted {
-    color: #ff0000; /* Red color, change as needed */
-    font-size: 1.5em; /* Adjust font size as needed */
-    font-weight: bold; /* Optional: make text bold */
 }
 
-
-
+.eventDetails {
+  font-weight: bold;
+  color: #dcdcaa; /* Event details color (VS Code keyword color) */
+}
 
 .koduyatra {
-  font-size: 18px; /* Change to desired font size */
-  color: #ff5733; /* Change to desired color */
-  font-weight: bold; /* Optional: Make it bold */
+  font-size: 18px;
+  color: #ffc200; /* Specific color for 'Koduyatra' (VS Code function color) */
+  font-weight: bold;
 }
 
 .eventDate {
-  font-size: 18px; /* Change to desired font size */
-  color: #ff5733; /* Change to desired color */
+  font-size: 18px;
+  color: #00AE6B; /* Specific color for the date (VS Code string color) */
 }
 
-
-  @keyframes animateOutline {
-    0% {
+@keyframes animateOutline {
+  0% {
       outline-width: 1px;
       outline-offset: 0;
       outline-color: rgba(0, 130, 206, 0);
-    }
-  
-    10% {
+  }
+  10% {
       outline-color: rgba(0, 130, 206, 0.75);
-    }
-  
-    /* The animation finishes at 50% */
-    50% {
+  }
+  50% {
       outline-width: 7px;
       outline-offset: 4px;
       outline-color: rgba(0, 130, 206, 0);
-    }
-  
-    100% {
+  }
+  100% {
       outline-width: 7px;
       outline-offset: 4px;
       outline-color: rgba(102, 102, 102, 0);
-    }
   }
-  
-  
-  @media (max-width: 400px) {
-    .codeSnippet {
-        font-size:6px;
-        max-width:350px;
-        overflow-x: scroll;
-        
-    }
+}
 
-    .eventDetails {
-        font-size: 10px;
-    }
-
-    .koduyatra {
-      font-size: 12px; /* Change to desired font size */
-      color: #ff5733; /* Change to desired color */
-      font-weight: bold; /* Optional: Make it bold */
-    }
-    
-    .eventDate {
-      font-size: 12px; /* Change to desired font size */
-      color: #ff5733; /* Change to desired color */
-    }
-
-    
-} 
+@media (max-width: 400px) {
+  .codeSnippet {
+      font-size: 6px;
+      max-width: 350px;
+      overflow-x: scroll;
+  }
+  .eventDetails {
+      font-size: 10px;
+  }
+  .koduyatra {
+      font-size: 12px;
+  }
+  .eventDate {
+      font-size: 12px;
+  }
+}
 
 @media (max-width: 500px) {
   .codeSnippet {
-      font-size:8px;
-      max-width:400px;
+      font-size: 8px;
+      max-width: 400px;
       overflow-x: scroll;
-      
   }
-
   .eventDetails {
       font-size: 12px;
   }
-
   .koduyatra {
-    font-size: 14px; /* Change to desired font size */
-    color: #ff5733; /* Change to desired color */
-    font-weight: bold; /* Optional: Make it bold */
+      font-size: 14px;
   }
-  
   .eventDate {
-    font-size: 12px; /* Change to desired font size */
-    color: #ff5733; /* Change to desired color */
+      font-size: 12px;
   }
-} 
-
-
+}
