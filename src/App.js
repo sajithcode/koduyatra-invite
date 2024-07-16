@@ -18,7 +18,7 @@ import dance from './Assets/dance.gif';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-
+import backgroungImage from './Assets/bg-img.svg';
 
 
 function App() {
@@ -83,25 +83,25 @@ function App() {
     <>
       <Particle />
       <div className='bg-img'>
-      <div className='logo-div'>
-        <img src={Logo} width={220} alt="Event Logo" />
-      </div>
-      <div className='background-lottie'>
-        <LottieAnim />
-      </div>
-      <Invite />
-      {/* <div id="myThreeJsCanvas">
-        <canvas ref={canvasRef}>
+        <div className='logo-div'>
+          <img src={Logo} width={220} alt="Event Logo" loading="lazy"/>
+        </div>
+        <div className='background-lottie'>
+          <LottieAnim />
+        </div>
         <Invite />
-        </canvas>
-        
-      </div> */}
-      {/* Uncomment if needed
-      <div className='gif-img'
-      >
-        <img src={dance} alt="My GIF" />
-      </div>
-      */}
+        {/* <div id="myThreeJsCanvas">
+          <canvas ref={canvasRef}>
+          <Invite />
+          </canvas>
+          
+        </div> */}
+        {/* Uncomment if needed
+        <div className='gif-img'
+        >
+          <img src={dance} alt="My GIF" />
+        </div>
+        */}
       </div>
       {/* <footer className="footer">
         <p>&copy; 2024 Koduyatra Event, Faculty of Computing, SUSL. All rights reserved.</p>

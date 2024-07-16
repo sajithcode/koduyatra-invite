@@ -50,16 +50,27 @@ Have_FOC_Event();
         }
     }, [index, combinedSnippet]);
 
-
-
     return (
         <>
             <div className='invite-container'>
-                
                 <div className='codeSnippet'>
                     <pre>
                         {displayedText.split('\n').map((line, idx) => {
-                            if (line.includes('Welcome to Koduyatra') || line.includes('Venue:') || line.includes('Date:') || line.includes('Time:') || line.includes('Organized By:') || line.includes('We invite you') || line.includes('Auditorium') || line.includes('join')) {
+                            if (line.includes('Koduyatra')) {
+                                return (
+                                    <span key={idx} className="eventDetails koduyatra">
+                                        {line}
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('04 July 2024')) {
+                                return (
+                                    <span key={idx} className="eventDetails eventDate">
+                                        {line}
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('Welcome to Koduyatra') || line.includes('Venue:') || line.includes('Date:') || line.includes('Time:') || line.includes('Organized By:') || line.includes('We invite you') || line.includes('Auditorium') || line.includes('join')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         {line}
@@ -68,21 +79,15 @@ Have_FOC_Event();
                                 );
                             }
                             return (
-                                <span key={idx} >
+                                <span key={idx}>
                                     {line}
                                     <br />
                                 </span>
                             );
                         })}
                     </pre>
-                    
                 </div>
-                
             </div>
-            
-
-            
         </>
     );
-    
 }

@@ -65,6 +65,7 @@
 
 
 .invite-container {
+   font-family: "Fira Sans", sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,12 +79,13 @@
   
   .codeSnippet {
     font-size: 16px;
-    font-family: "Space Mono", monospace;
+    /* font-family: "Fira Sans", sans-serif; */
+    /* font-family: "Space Mono", monospace; */
     color:white; /* Adjust font size as needed */
     line-height: 1.5; /* Adjust line height for better readability */
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor:pointer;
     overflow-wrap: break-word; /* Prevent text from overflowing horizontally */
     white-space: pre-wrap; /* Preserve whitespace while allowing wrapping */
@@ -97,6 +99,7 @@
   outline-style: solid;
   animation: animateOutline 4s ease infinite;
   /* filter: drop-shadow(3px 3px 1px white); */
+  /* backdrop-filter: blur(10px) */
 
   }
   
@@ -116,6 +119,27 @@
     pointer-events:none;
     mix-blend-mode: difference;
   }
+
+  .highlighted {
+    color: #ff0000; /* Red color, change as needed */
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: make text bold */
+}
+
+
+
+
+.koduyatra {
+  font-size: 18px; /* Change to desired font size */
+  color: #ff5733; /* Change to desired color */
+  font-weight: bold; /* Optional: Make it bold */
+}
+
+.eventDate {
+  font-size: 18px; /* Change to desired font size */
+  color: #ff5733; /* Change to desired color */
+}
+
 
   @keyframes animateOutline {
     0% {
@@ -145,7 +169,7 @@
   
   @media (max-width: 400px) {
     .codeSnippet {
-        font-size:8px;
+        font-size:6px;
         max-width:350px;
         overflow-x: scroll;
         
@@ -154,11 +178,24 @@
     .eventDetails {
         font-size: 10px;
     }
+
+    .koduyatra {
+      font-size: 12px; /* Change to desired font size */
+      color: #ff5733; /* Change to desired color */
+      font-weight: bold; /* Optional: Make it bold */
+    }
+    
+    .eventDate {
+      font-size: 12px; /* Change to desired font size */
+      color: #ff5733; /* Change to desired color */
+    }
+
+    
 } 
 
 @media (max-width: 500px) {
   .codeSnippet {
-      font-size:10px;
+      font-size:8px;
       max-width:400px;
       overflow-x: scroll;
       
@@ -166,6 +203,17 @@
 
   .eventDetails {
       font-size: 12px;
+  }
+
+  .koduyatra {
+    font-size: 14px; /* Change to desired font size */
+    color: #ff5733; /* Change to desired color */
+    font-weight: bold; /* Optional: Make it bold */
+  }
+  
+  .eventDate {
+    font-size: 12px; /* Change to desired font size */
+    color: #ff5733; /* Change to desired color */
   }
 } 
 
