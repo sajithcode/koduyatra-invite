@@ -1,0 +1,188 @@
+.invite-container {
+    font-family: "Fira Sans", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ensure content fills viewport height */
+    width: 100%; /* Stretch to full width */
+    /* Optional background color */
+  }
+  
+  .codeSnippet {
+    text-align:center;
+    font-size: 16px;
+    /* color: #dcdcaa; */
+    color: #d4d4d4; /* Default text color (VS Code default) */
+    line-height: 1.5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color similar to VS Code */
+    outline-width: 1px;
+    outline-offset: 0;
+    outline-color: rgba(0, 130, 206, 0.75);
+    outline-style: solid;
+    animation: animateOutline 4s ease infinite;
+  }
+  
+  .eventDetails {
+    /* padding-left: 35px; */
+    font-weight: bold;
+    color: #d58747;
+  }
+
+  .event-footer{
+    font-size:16px
+  }
+  
+  .koduyatra {
+    font-size: 18px;
+    color: #ffc200; /* Specific color for 'Koduyatra' (VS Code function color) */
+    font-weight: bold;
+  }
+  
+  .eventDate {
+    font-size: 18px;
+    font-weight: 500;
+    color: #dcdcaa; 
+  }
+  
+  .dateLabel {
+    color: #7FE3FF;
+  }
+  
+  .dateValue {
+    color: #92DF98;
+  }
+  
+  .organizerLabel {
+    color: #7FE3FF;
+  }
+  
+  .organizerValue {
+    color: #92DF98;
+  }
+  
+  .timeLabel {
+    color: #7FE3FF;
+  }
+  
+  .timeValue {
+    color:#92DF98;
+  }
+  
+  .venueLabel {
+    color: #7FE3FF;
+  }
+  
+  .venueValue {
+    color: #92DF98;
+  }
+  
+  @keyframes animateOutline {
+    0% {
+        outline-width: 1px;
+        outline-offset: 0;
+        outline-color: rgba(0, 130, 206, 0);
+    }
+    10% {
+        outline-color: rgba(0, 130, 206, 0.75);
+    }
+    50% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(0, 130, 206, 0);
+    }
+    100% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(102, 102, 102, 0);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .codeSnippet {
+        font-size: 6px;
+        max-width: 350px;
+        overflow-x: scroll;
+    }
+    .eventDetails {
+        font-size: 10px;
+    }
+    .koduyatra {
+        font-size: 12px;
+    }
+    .eventDate {
+        font-size: 12px;
+    }
+    .dateLabel {
+        font-size: 10px;
+    }
+    .dateValue {
+        font-size: 10px;
+    }
+    .organizerLabel {
+        font-size: 10px;
+    }
+    .organizerValue {
+        font-size: 10px;
+    }
+    .timeLabel {
+        font-size: 10px;
+    }
+    .timeValue {
+        font-size: 10px;
+    }
+    .venueLabel {
+        font-size: 10px;
+    }
+    .venueValue {
+        font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .codeSnippet {
+        font-size: 8px;
+        max-width: 320px;
+        overflow-x: scroll;
+    }
+    .eventDetails {
+        font-size: 12px;
+    }
+    .koduyatra {
+        font-size: 14px;
+    }
+    .eventDate {
+        font-size: 12px;
+    }
+    .dateLabel {
+        font-size: 12px;
+    }
+    .dateValue {
+        font-size: 12px;
+    }
+    .organizerLabel {
+        font-size: 12px;
+    }
+    .organizerValue {
+        font-size: 12px;
+    }
+    .timeLabel {
+        font-size: 12px;
+    }
+    .timeValue {
+        font-size: 12px;
+    }
+    .venueLabel {
+        font-size: 12px;
+    }
+    .venueValue {
+        font-size: 12px;
+    }
+  }
+  

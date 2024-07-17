@@ -1,3 +1,9 @@
+@import './fonts.css';
+
+
+/* Add this keyframe animation for horizontal movement */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +59,17 @@ body{
  
 }
 
+.slogan-div{
+  text-align:center;
+  margin: -20px 0 20px;
+}
+
+.slogan{
+  font-family: 'TharuDigitalNikini', sans-serif;
+  color:#000;
+  font-size:30px;
+}
+
 /* .footer {
   font-family: "Fira Sans", sans-serif;
   margin-top: 20px;
@@ -100,6 +117,16 @@ body{
 
   .bg-img{
     height:100vh;
+  }
+
+  .slogan-div{
+    
+    margin: -20px 0 20px;
+  }
+
+  .slogan{
+   
+    font-size:20px;
   }
 } 
 

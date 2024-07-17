@@ -1,53 +1,41 @@
-import './invite.css';
+import './invitetest.css';
 import { useEffect, useState } from 'react';
 
 export default function Invite() {
-    const codeSnippet = `
-Welcome to Koduyatra
+    const invitationText = `
+You are invited to
 
-function Have_FOC_Event() {
-  const today = new Date();
-  
-  if (today.getDate() === 4 && 
-     (today.getMonth() + 1) === 7) {
-    console.log(\``;
+Koduyatra 2024!
 
-    const eventDetails = `
+Date: Thursday, July 4, 2024
 
-Organized By: 21/22 Batch FOC
-
-    Date: Thursday, July 4, 2024
-
-Time: from 6 PM onwards
+Time: 6 PM onwards
 
 Venue: J.W. Dayananda Somasundara Auditorium
 
-We invite you to mark your calendars and
-join us for an unforgettable evening.
+Make sure to mark your calendars and be 
+part of this unforgettable experience. 
+
+
+---
+
+Students' Union  
+Faculty of Computing  
+Sabaragamuwa University of Sri Lanka
     `;
-
-    const codeAfterEvent = `\`);
-    return true;
-  }
-}
-
-Have_FOC_Event();
-  `;
 
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
 
-    const combinedSnippet = codeSnippet + eventDetails + codeAfterEvent;
-
     useEffect(() => {
-        if (index < combinedSnippet.length) {
+        if (index < invitationText.length) {
             const timeout = setTimeout(() => {
-                setDisplayedText((prev) => prev + combinedSnippet[index]);
+                setDisplayedText((prev) => prev + invitationText[index]);
                 setIndex(index + 1);
             }, 50); // Adjust typing speed here
             return () => clearTimeout(timeout);
         }
-    }, [index, combinedSnippet]);
+    }, [index, invitationText]);
 
     return (
         <>
@@ -55,7 +43,7 @@ Have_FOC_Event();
                 <div className='codeSnippet'>
                     <pre>
                         {displayedText.split('\n').map((line, idx) => {
-                            if (line.includes('Koduyatra')) {
+                            if (line.includes('Koduyatra 2024!')) {
                                 return (
                                     <span key={idx} className="eventDetails koduyatra">
                                         {line}
@@ -70,27 +58,15 @@ Have_FOC_Event();
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Organized By: 21/22 Batch FOC')) {
-                                return (
-                                    <span key={idx} className="eventDetails">
-                                        <span className="organizerLabel">Organized By:</span>
-                                        <span className="organizerValue"> 21/22 Batch FOC</span>
-                                        <br />
-                                    </span>
-                                );
-                                
-                            }
-                            else if (line.includes('Time: from 6 PM onwards')) {
+                            } else if (line.includes('Time: 6 PM onwards')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="timeLabel">Time:</span>
-                                        <span className="timeValue"> from 6 PM onwards</span>
+                                        <span className="timeValue"> 6 PM onwards</span>
                                         <br />
                                     </span>
                                 );
-                            }
-                            
-                            else if (line.includes('Venue: J.W. Dayananda Somasundara')) {
+                            } else if (line.includes('Venue: J.W. Dayananda Somasundara Auditorium')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="venueLabel">Venue:</span>
@@ -98,9 +74,30 @@ Have_FOC_Event();
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Welcome to Koduyatra') || line.includes('We invite you') || line.includes('join')) {
+                            } else if (line.includes('Students\' Union')) {
                                 return (
                                     <span key={idx} className="eventDetails">
+                                        {line}
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('Faculty of Computing')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        {line}
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('Sabaragamuwa University of Sri Lanka')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        {line}
+                                        <br />
+                                    </span>
+                                );
+                            } else if (line.includes('You are invited to') || line.includes('Make sure to mark your calendars') || line.includes('unforgettable experience') || line.includes('We look forward to seeing you there!')) {
+                                return (
+                                    <span key={idx} className="eventDetails event-footer">
                                         {line}
                                         <br />
                                     </span>

@@ -20,7 +20,7 @@
   white-space: pre-wrap;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #1e1e1e; /* Background color similar to VS Code */
+  background-color: rgba(0, 0, 0, 0.7); /*Background color similar to VS Code */
   outline-width: 1px;
   outline-offset: 0;
   outline-color: rgba(0, 130, 206, 0.75);
@@ -47,35 +47,35 @@
 }
 
 .dateLabel {
-  color: #4dbdae;
+  color: #7FE3FF;
 }
 
 .dateValue {
-  color: #d58747;
+  color: #92DF98;
 }
 
 .organizerLabel {
-  color: #4dbdae;
+  color: #7FE3FF;
 }
 
 .organizerValue {
-  color: #d58747;
+  color: #92DF98;
 }
 
 .timeLabel {
-  color: #4dbdae;
+  color: #7FE3FF;
 }
 
 .timeValue {
-  color: #d58747;
+  color:#92DF98;
 }
 
 .venueLabel {
-  color: #4dbdae;
+  color: #7FE3FF;
 }
 
 .venueValue {
-  color: #d58747;
+  color: #92DF98;
 }
 
 @keyframes animateOutline {
@@ -143,7 +143,7 @@
 @media (max-width: 500px) {
   .codeSnippet {
       font-size: 8px;
-      max-width: 400px;
+      max-width: 320px;
       overflow-x: scroll;
   }
   .eventDetails {

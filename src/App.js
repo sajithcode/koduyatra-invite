@@ -1,11 +1,14 @@
 import { useEffect, useRef } from 'react';
 import './App.css';
+import './fonts.css';
 import Lottie from "lottie-react";
 import * as THREE from 'three';
 
 import Logo from './Assets/logo.png';
 import Particle from './components/Particle';
 import Invite from './components/Invite';
+import InviteTest from './components/InviteTest';
+
 import LottieAnim from './components/LottieAnim';
 // import Img2 from './Assets/img2.png'; // If not used, consider removing it
 // import MusicBoy from './components/MusicBoy'; // If not used, consider removing it
@@ -19,6 +22,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import backgroungImage from './Assets/bg-img.svg';
+import Flyer from './components/Flyer';
 
 
 function App() {
@@ -86,10 +90,17 @@ function App() {
         <div className='logo-div'>
           <img src={Logo} width={220} alt="Event Logo" loading="lazy"/>
         </div>
+        <div className='slogan-div'>
+          <p className='slogan'>iïm%odfha pl%hka wNsnjk fldavqldr wduka;%Kh</p>
+        </div>
+        {/* <div>
+          <Flyer />
+        </div> */}
         <div className='background-lottie'>
           <LottieAnim />
         </div>
-        <Invite />
+        {/* <Invite /> */}
+        <InviteTest />
         {/* <div id="myThreeJsCanvas">
           <canvas ref={canvasRef}>
           <Invite />
