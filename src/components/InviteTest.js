@@ -11,7 +11,8 @@ Date: Thursday, July 4, 2024
 
 Time: 6 PM onwards
 
-Venue: J.W. Dayananda Somasundara Auditorium
+Venue: J.W. Dayananda Somasundara
+Auditorium
 
 Make sure to mark your calendars and be 
 part of this unforgettable experience. 
@@ -66,15 +67,26 @@ Sabaragamuwa University of Sri Lanka
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Venue: J.W. Dayananda Somasundara Auditorium')) {
+                            } else if (line.includes('Venue: J.W. Dayananda Somasundara')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="venueLabel">Venue:</span>
-                                        <span className="venueValue"> J.W. Dayananda Somasundara Auditorium</span>
+                                        <span className="venueValue"> J.W. Dayananda Somasundara</span>
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Students\' Union')) {
+                                
+                            }
+                            else if (line.includes('Auditorium')) {
+                                return (
+                                    <span key={idx} className="eventDetails">
+                                        <span className="venueValue">Auditorium</span>
+                                        <br />
+                                    </span>
+                                );
+                                
+                            }
+                            else if (line.includes('Students\' Union')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         {line}
