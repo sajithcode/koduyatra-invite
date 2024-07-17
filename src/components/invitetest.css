@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 .invite-container {
     font-family: "Fira Sans", sans-serif; 
     display: flex;
@@ -9,12 +15,14 @@
   }
   
   .codeSnippet {
+    
+    padding: 20px 20px 25px 0;
     text-align:center;
     font-size: 16px;
     /* color: #dcdcaa; */
     color: #d4d4d4; /* Default text color (VS Code default) */
     line-height: 1.5;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow-wrap: break-word;
@@ -33,7 +41,16 @@
     /* padding-left: 35px; */
     font-weight: bold;
     color: #d58747;
+    
+    
   }
+
+  pre{
+    /* display:flex;
+    justify-content:center;
+    align-items:center; */
+    text-align:center;
+}
 
   .event-footer{
     font-size:16px
