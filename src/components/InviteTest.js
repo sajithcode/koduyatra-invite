@@ -14,8 +14,9 @@ Time: 6 PM onwards
 Venue: J.W. Dayananda Somasundara
 Auditorium
 
-Make sure to mark your calendars and be 
-part of this unforgettable experience. 
+Make sure to mark your calendars 
+and be part of 
+this unforgettable experience. 
 
 
 ---
@@ -107,7 +108,7 @@ Sabaragamuwa University of Sri Lanka
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('You are invited to') || line.includes('Make sure to mark your calendars') || line.includes('unforgettable experience') || line.includes('We look forward to seeing you there!')) {
+                            } else if (line.includes('You are invited to') || line.includes('Make sure to mark your calendars')|| line.includes('and be part of') || line.includes('unforgettable experience') || line.includes('We look forward to seeing you there!')) {
                                 return (
                                     <span key={idx} className="eventDetails event-footer">
                                         {line}
