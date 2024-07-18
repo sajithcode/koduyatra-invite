@@ -21,8 +21,7 @@ this unforgettable experience.
 
 ---
 
-Students' Union  
-Faculty of Computing  
+Students' Union - Faculty of Computing  
 Sabaragamuwa University of Sri Lanka
     `;
 
