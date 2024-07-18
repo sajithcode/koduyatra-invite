@@ -40,7 +40,7 @@
   .eventDetails {
     /* padding-left: 35px; */
     font-weight: bold;
-    color: #d58747;
+    /* color: #d58747; */
     
     
   }
@@ -53,11 +53,15 @@
 }
 
   .event-footer{
-    font-size:16px
+    font-size:16px;
+  }
+
+  .event-wagakim{
+    color: white ;
   }
   
   .koduyatra {
-    font-size: 18px;
+    font-size: 20px;
     color: #ffc200; /* Specific color for 'Koduyatra' (VS Code function color) */
     font-weight: bold;
   }

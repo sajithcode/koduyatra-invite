@@ -5,13 +5,13 @@ export default function Invite() {
     const invitationText = `
 You are invited to
 
-Koduyatra 2024!
+KODUYATRA 2024!
 
-Date: Thursday, July 4, 2024
+Date: Tuesday, July 23, 2024
 
 Time: 6 PM onwards
 
-Venue: J.W. Dayananda Somasundara
+Venue: Prof. J.W. Dayananda Somasundara
 Auditorium
 
 Make sure to mark your calendars 
@@ -45,18 +45,18 @@ Sabaragamuwa University of Sri Lanka
                 <div className='codeSnippet'>
                     <pre>
                         {displayedText.split('\n').map((line, idx) => {
-                            if (line.includes('Koduyatra 2024!')) {
+                            if (line.includes('KODUYATRA 2024!')) {
                                 return (
                                     <span key={idx} className="eventDetails koduyatra">
                                         {line}
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Date: Thursday, July 4, 2024')) {
+                            } else if (line.includes('Date: Tuesday, July 23, 2024')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="dateLabel">Date:</span>
-                                        <span className="dateValue"> Thursday, July 4, 2024</span>
+                                        <span className="dateValue"> Tuesday, July 23, 2024</span>
                                         <br />
                                     </span>
                                 );
@@ -64,15 +64,15 @@ Sabaragamuwa University of Sri Lanka
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="timeLabel">Time:</span>
-                                        <span className="timeValue"> 6 PM onwards</span>
+                                        <span className="timeValue"> 6.00 PM onwards</span>
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Venue: J.W. Dayananda Somasundara')) {
+                            } else if (line.includes('Venue: Prof. J.W. Dayananda Somasundara')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="venueLabel">Venue:</span>
-                                        <span className="venueValue"> J.W. Dayananda Somasundara</span>
+                                        <span className="venueValue"> Prof. J.W. Dayananda Somasundara</span>
                                         <br />
                                     </span>
                                 );
@@ -112,6 +112,16 @@ Sabaragamuwa University of Sri Lanka
                                 return (
                                     <span key={idx} className="eventDetails event-footer">
                                         {line}
+                                        <br />
+                                    </span>
+                                );
+                            }
+                            else if (line.includes("Students' Union") || line.includes('Faculty of Computing')|| line.includes('Sabaragamuwa University of Sri Lanka') ) {
+                                return (
+                                    <span key={idx} className="eventDetails event-wagakim">
+                                        <span>Students' Union</span>
+                                        <span>Faculty of Computing</span>
+                                        <span>Sabaragamuwa University of Sri Lanka</span>
                                         <br />
                                     </span>
                                 );
