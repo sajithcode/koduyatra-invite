@@ -11,8 +11,8 @@ Date: Tuesday, July 23, 2024
 
 Time: 6 PM onwards
 
-Venue: Prof. J.W. Dayananda Somasundara
-Auditorium
+Venue: Prof. J.W. Dayananda 
+Somasundara Auditorium
 
 Make sure to mark your calendars 
 and be part of 
@@ -68,20 +68,20 @@ Sabaragamuwa University of Sri Lanka
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Venue: Prof. J.W. Dayananda Somasundara')) {
+                            } else if (line.includes('Venue: Prof. J.W. Dayananda')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="venueLabel">Venue:</span>
-                                        <span className="venueValue"> Prof. J.W. Dayananda Somasundara</span>
+                                        <span className="venueValue"> Prof. J.W. Dayananda</span>
                                         <br />
                                     </span>
                                 );
                                 
                             }
-                            else if (line.includes('Auditorium')) {
+                            else if (line.includes('Somasundara Auditorium')) {
                                 return (
                                     <span key={idx} className="eventDetails">
-                                        <span className="venueValue">Auditorium</span>
+                                        <span className="venueValue">Somasundara Auditorium</span>
                                         <br />
                                     </span>
                                 );
