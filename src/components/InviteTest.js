@@ -115,9 +115,9 @@ Sabaragamuwa University of Sri Lanka
                                     </span>
                                 );
                             }
-                            else if (line.includes("Students' Union") || line.includes('Faculty of Computing')|| line.includes('Sabaragamuwa University of Sri Lanka') ) {
+                            else if ( line.includes("Students' Union - Faculty of Computing")|| line.includes('Sabaragamuwa University of Sri Lanka') ) {
                                 return (
-                                    <span key={idx} className="eventDetails event-wagakim">
+                                    <span key={idx} className="eventDetails event-wagkim">
                                         <span>Students' Union</span>
                                         <span>Faculty of Computing</span>
                                         <span>Sabaragamuwa University of Sri Lanka</span>
