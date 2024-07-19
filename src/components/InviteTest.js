@@ -7,7 +7,7 @@ You are invited to
 
 KODUYATRA 2024!
 
-Date: Tuesday, July 23, 2024
+Date: Wednesday, July 24, 2024
 
 Time: 6 PM onwards
 
@@ -51,11 +51,11 @@ Sabaragamuwa University of Sri Lanka
                                         <br />
                                     </span>
                                 );
-                            } else if (line.includes('Date: Tuesday, July 23, 2024')) {
+                            } else if (line.includes('Date: Wednesday, July 24, 2024')) {
                                 return (
                                     <span key={idx} className="eventDetails">
                                         <span className="dateLabel">Date:</span>
-                                        <span className="dateValue"> Tuesday, July 23, 2024</span>
+                                        <span className="dateValue"> Wednesday, July 24, 2024</span>
                                         <br />
                                     </span>
                                 );
